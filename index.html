@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div>
+    <div class="container">
       <div class="cotacao" id="cotacao">
       </div>
         <div>
@@ -20,8 +20,8 @@
         </div>
         <div>
                 <label for="moeda"></label>
-                VALOR EM DOLAR $: <input type="number" step="0.01" min="0.01" required id="valor" size="2">
-                <button type="text" onclick="converte()">Converter</button>
+                VALOR EM DOLAR $: <input class="input" type="number" step="0.01" min="0.01" required id="valor" size="2">
+                <button class="botaocotar" type="text" onclick="converte()">Converter</button>
                 <div id="valorConvertido">
 
                 </div>

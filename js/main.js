@@ -19,8 +19,6 @@ function converte(){
     var mes = String(date.getMonth() + 1).padStart(2, '0');
     var ano = date.getFullYear();
     var dataAtual = dia + '/' + mes + '/' + ano;
-
-
     var valorEmDolarNumerico = valorEmRealNumerico * valorDolar;
     var elementoValorConvertido = document.getElementById("valorConvertido");
     var elementoCotacaoAtual = document.getElementById("cotacao");

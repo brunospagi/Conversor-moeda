@@ -23,10 +23,12 @@ function converte(){
 
     var valorEmDolarNumerico = valorEmRealNumerico * valorDolar;
     var elementoValorConvertido = document.getElementById("valorConvertido");
+    var elementoCotacaoAtual = document.getElementById("cotacao");
     var ValorConvertido = "O Resultado em real é R$" + valorEmDolarNumerico.toFixed(2) + " No Dia "  + dataAtual;
 
     if (valorEmDolarNumerico > 0 ){
         elementoValorConvertido.innerHTML = ValorConvertido;
+        elementoCotacaoAtual.innerHTML = "Cotação Atual R$: " + valorDolar;
     } else {
         elementoValorConvertido.innerHTML = "Insira o Valor Para Conversao";
     };
